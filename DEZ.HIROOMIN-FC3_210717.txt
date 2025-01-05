@@ -29,12 +29,12 @@
 290LOCATE 0,3:PRINT "                        "
 300LOCATE 0,4:PRINT "                        "
 310LOCATE 0,5:PRINT "                        "
-320LOCATE 0,2:INPUT "◊›∏(1-10)    : ";LA
-330LOCATE 0,3:INPUT "≈œ¥(MAX8”ºﬁ) : ";NA$
-340LOCATE 0,4:INPUT "Ω√-ºﬁ(ALL=7) : ";ST
-350LOCATE 0,5:INPUT "Ω∫±(MAX8π¿ ) : ";SC
+320LOCATE 0,2:INPUT "ÔæóÔæùÔΩ∏(1-10)    : ";LA
+330LOCATE 0,3:INPUT "ÔæÖÔæèÔΩ¥(MAX8ÔæìÔΩºÔæû) : ";NA$
+340LOCATE 0,4:INPUT "ÔΩΩÔæÉ-ÔΩºÔæû(ALL=7) : ";ST
+350LOCATE 0,5:INPUT "ÔΩΩÔΩ∫ÔΩ±(MAX8ÔΩπÔæÄ ) : ";SC
 360WAIT
-370LOCATE 0,1:PRINT "=== √›ø≥ OK? (ENTER) ==="
+370LOCATE 0,1:PRINT "=== ÔæÉÔæùÔΩøÔΩ≥ OK? (ENTER) ==="
 380WAIT 0
 390LOCATE 0,1:PRINT "                        "
 400LOCATE 0,2:PRINT "                        "
@@ -43,7 +43,7 @@
 430LOCATE 0,5:PRINT "                        "
 440'A=99999999
 450HSC$= RIGHT$ ("00000000" + HEX$ SC,8)
-460LOCATE 0,5:PRINT HSC$+" (ÿ ﬁ-Ω)":HAL$(7)=HSC$
+460LOCATE 0,5:PRINT HSC$+" (ÔæòÔæäÔæû-ÔΩΩ)":HAL$(7)=HSC$
 470NA$= MID$ (NA$+ CHR$ (32)+ CHR$ (32)+ CHR$ (32)+ CHR$ (32)+ CHR$ (32)+ CHR$ (32)+ CHR$ (32)+ CHR$ (32),1,8)
 480HNA$=""
 490HNA$= HNA$ + RIGHT$ ("00" + HEX$ ASC MID$ (NA$,1,1),2)
@@ -74,7 +74,7 @@
 740IF LA=8 THEN HLA$ = "707EFE"
 750IF LA=9 THEN HLA$ = "707F0E"
 760IF LA=10 THEN HLA$ = "707F1E"
-770LOCATE 0,2:PRINT "***** (À–¬)":HAL$(2)=HLA$
+770LOCATE 0,2:PRINT "***** (ÔæãÔæêÔæÇ)":HAL$(2)=HLA$
 780HAL$(5)="000F"
 790HAL$(1)="01"
 800HAL$(23)="FF"
@@ -106,7 +106,7 @@
 1100RETURN
 1110*SUB1
 1120'LOCATE 12,1:PRINT SUB2$(1)
-1130'LOCATE 12,1:PRINT "√›ø≥¡≠≥°°"
+1130'LOCATE 12,1:PRINT "ÔæÉÔæùÔΩøÔΩ≥ÔæÅÔΩ≠ÔΩ≥ÔΩ°ÔΩ°"
 1140IF MID$ (SUB2$(1),2,1)="0" THEN S(5)=0:S(6)=0:S(7)=0:S(8)=0
 1150IF MID$ (SUB2$(1),2,1)="1" THEN S(5)=0:S(6)=0:S(7)=0:S(8)=1
 1160IF MID$ (SUB2$(1),2,1)="2" THEN S(5)=0:S(6)=0:S(7)=1:S(8)=0
