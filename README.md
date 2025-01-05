@@ -26,5 +26,9 @@
 | 6番              | DATA1                    |
 
 
-## メモ (参考画像)
+## 参考資料
+結線方法
 https://x.com/hiroominpps/status/1875567242680901901
+
+実際に動作させた映像　youtube
+https://www.youtube.com/watch?v=i6htzjsFh10
